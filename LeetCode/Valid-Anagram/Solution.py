@@ -6,23 +6,15 @@
 6        :rtype: bool
 7        """
 8
-9        characters_s = list()
-10        characters_t = list()
-11
-12        if (len(s) == len(t)):
-13            for char in s:
-14                characters_s.append(char)
-15
-16            for char in t:
-17                characters_t.append(char)
-18
-19            for char in characters_s:
-20                if char in t:
-21                    t = t.replace(char,"", 1)
-22                else:
-23                    return False
-24                
-25        else:
-26            return False
-27        return True
-28        
+9
+10        if (len(s) == len(t)):
+11            for char in s:
+12                if char in t:
+13                    t = t.replace(char,"", 1)
+14                else:
+15                    return False
+16                
+17        else:
+18            return False
+19        return True
+20        
