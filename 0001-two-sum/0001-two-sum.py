@@ -4,6 +4,8 @@ class Solution:
         index1 = 0
         index2 = 0
 
+        length = len(nums) - 1
+                
         for i, num in enumerate(nums):
             for j, num2 in enumerate(nums):
                 if i == j:
